@@ -1,0 +1,8 @@
+mypy>=0.9, <1
+pyOpenSSL>=22.1.0, <24.0.0
+xmlsig>=1.0.1, <2.0.0
+xades==1.0.0
+xmlformatter
+types-pyOpenSSL
+typer[all]
+rich

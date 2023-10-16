@@ -1,0 +1,87 @@
+<TiqueteElectronico xmlns="https://cdn.comprobanteselectronicos.go.cr/xml-schemas/v4.3/tiqueteElectronico" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+    <Clave>12345678901234567890123456789012345678901234567890</Clave>
+    <CodigoActividad>123456</CodigoActividad>
+    <NumeroConsecutivo>12345678901234567890</NumeroConsecutivo>
+    <FechaEmision>2023-10-15T00:00:00-06:00</FechaEmision>
+    <Emisor>
+        <Nombre>Empresa de Prueba S.A.</Nombre>
+        <Identificacion>
+            <Tipo>01</Tipo>
+            <Numero>123456789</Numero>
+        </Identificacion>
+        <Ubicacion>
+            <Provincia>1</Provincia>
+            <Canton>01</Canton>
+            <Distrito>01</Distrito>
+            <Barrio>01</Barrio>
+            <OtrasSenas>Oficina de Prueba</OtrasSenas>
+        </Ubicacion>
+        <Telefono>
+            <CodigoPais>506</CodigoPais>
+            <NumTelefono>12345678</NumTelefono>
+        </Telefono>
+        <CorreoElectronico>correo@prueba.com</CorreoElectronico>
+    </Emisor>
+    <Receptor>
+        <Nombre>Cliente de Prueba S.A.</Nombre>
+        <IdentificacionExtranjero>EX-123456789</IdentificacionExtranjero>
+    </Receptor>
+    <CondicionVenta>01</CondicionVenta>
+    <PlazoCredito>0 días</PlazoCredito>
+    <MedioPago>01</MedioPago>
+    <DetalleServicio>
+        <LineaDetalle>
+            <NumeroLinea>1</NumeroLinea>
+            <Codigo>1234567890</Codigo>
+            <CodigoComercial>
+                <Tipo>01</Tipo>
+                <Codigo>1234567890</Codigo>
+            </CodigoComercial>
+            <Cantidad>1.00000</Cantidad>
+            <UnidadMedida>Unid</UnidadMedida>
+            <UnidadMedidaComercial>Caja</UnidadMedidaComercial>
+            <Detalle>Producto de Prueba</Detalle>
+            <PrecioUnitario>100.00</PrecioUnitario>
+            <MontoTotal>100.00</MontoTotal>
+            <Descuento>
+                <MontoDescuento>0.00</MontoDescuento>
+                <NaturalezaDescuento>Descuento de Prueba</NaturalezaDescuento>
+            </Descuento>
+            <SubTotal>100.00</SubTotal>
+            <Impuesto>
+                <Codigo>01</Codigo>
+                <CodigoTarifa>01</CodigoTarifa>
+                <Tarifa>0</Tarifa>
+                <Monto>0.00</Monto>
+            </Impuesto>
+            <MontoTotalLinea>100.00</MontoTotalLinea>
+        </LineaDetalle>
+    </DetalleServicio>
+    <OtrosCargos>
+        <TipoDocumento>01</TipoDocumento>
+        <Detalle>Cargo de Prueba</Detalle>
+        <Porcentaje>0.00000</Porcentaje>
+        <MontoCargo>0.00</MontoCargo>
+    </OtrosCargos>
+    <ResumenFactura>
+        <CodigoTipoMoneda>
+            <CodigoMoneda>CRC</CodigoMoneda>
+            <TipoCambio>1</TipoCambio>
+        </CodigoTipoMoneda>
+        <TotalServGravados>0.00</TotalServGravados>
+        <TotalServExentos>0.00</TotalServExentos>
+        <TotalServExonerado>0.00</TotalServExonerado>
+        <TotalMercanciasGravadas>0.00</TotalMercanciasGravadas>
+        <TotalMercanciasExentas>0.00</TotalMercanciasExentas>
+        <TotalMercExonerada>0.00</TotalMercExonerada>
+        <TotalGravado>0.00</TotalGravado>
+        <TotalExento>0.00</TotalExento>
+        <TotalExonerado>0.00</TotalExonerado>
+        <TotalVenta>0.00</TotalVenta>
+        <TotalDescuentos>0.00</TotalDescuentos>
+        <TotalVentaNeta>0.00</TotalVentaNeta>
+        <TotalImpuesto>0.00</TotalImpuesto>
+        <TotalOtrosCargos>0.00</TotalOtrosCargos>
+        <TotalComprobante>0.00</TotalComprobante>
+    </ResumenFactura>
+</TiqueteElectronico>
