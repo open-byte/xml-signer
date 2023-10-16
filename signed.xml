@@ -1,0 +1,149 @@
+<TiqueteElectronico xmlns="https://cdn.comprobanteselectronicos.go.cr/xml-schemas/v4.3/tiqueteElectronico" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+    <Clave>12345678901234567890123456789012345678901234567890</Clave>
+    <CodigoActividad>123456</CodigoActividad>
+    <NumeroConsecutivo>12345678901234567890</NumeroConsecutivo>
+    <FechaEmision>2023-10-15T00:00:00-06:00</FechaEmision>
+    <Emisor>
+        <Nombre>Empresa de Prueba S.A.</Nombre>
+        <Identificacion>
+            <Tipo>01</Tipo>
+            <Numero>123456789</Numero>
+        </Identificacion>
+        <Ubicacion>
+            <Provincia>1</Provincia>
+            <Canton>01</Canton>
+            <Distrito>01</Distrito>
+            <Barrio>01</Barrio>
+            <OtrasSenas>Oficina de Prueba</OtrasSenas>
+        </Ubicacion>
+        <Telefono>
+            <CodigoPais>506</CodigoPais>
+            <NumTelefono>12345678</NumTelefono>
+        </Telefono>
+        <CorreoElectronico>correo@prueba.com</CorreoElectronico>
+    </Emisor>
+    <Receptor>
+        <Nombre>Cliente de Prueba S.A.</Nombre>
+        <IdentificacionExtranjero>EX-123456789</IdentificacionExtranjero>
+    </Receptor>
+    <CondicionVenta>01</CondicionVenta>
+    <PlazoCredito>0 días</PlazoCredito>
+    <MedioPago>01</MedioPago>
+    <DetalleServicio>
+        <LineaDetalle>
+            <NumeroLinea>1</NumeroLinea>
+            <Codigo>1234567890</Codigo>
+            <CodigoComercial>
+                <Tipo>01</Tipo>
+                <Codigo>1234567890</Codigo>
+            </CodigoComercial>
+            <Cantidad>1.00000</Cantidad>
+            <UnidadMedida>Unid</UnidadMedida>
+            <UnidadMedidaComercial>Caja</UnidadMedidaComercial>
+            <Detalle>Producto de Prueba</Detalle>
+            <PrecioUnitario>100.00</PrecioUnitario>
+            <MontoTotal>100.00</MontoTotal>
+            <Descuento>
+                <MontoDescuento>0.00</MontoDescuento>
+                <NaturalezaDescuento>Descuento de Prueba</NaturalezaDescuento>
+            </Descuento>
+            <SubTotal>100.00</SubTotal>
+            <Impuesto>
+                <Codigo>01</Codigo>
+                <CodigoTarifa>01</CodigoTarifa>
+                <Tarifa>0</Tarifa>
+                <Monto>0.00</Monto>
+            </Impuesto>
+            <MontoTotalLinea>100.00</MontoTotalLinea>
+        </LineaDetalle>
+    </DetalleServicio>
+    <OtrosCargos>
+        <TipoDocumento>01</TipoDocumento>
+        <Detalle>Cargo de Prueba</Detalle>
+        <Porcentaje>0.00000</Porcentaje>
+        <MontoCargo>0.00</MontoCargo>
+    </OtrosCargos>
+    <ResumenFactura>
+        <CodigoTipoMoneda>
+            <CodigoMoneda>CRC</CodigoMoneda>
+            <TipoCambio>1</TipoCambio>
+        </CodigoTipoMoneda>
+        <TotalServGravados>0.00</TotalServGravados>
+        <TotalServExentos>0.00</TotalServExentos>
+        <TotalServExonerado>0.00</TotalServExonerado>
+        <TotalMercanciasGravadas>0.00</TotalMercanciasGravadas>
+        <TotalMercanciasExentas>0.00</TotalMercanciasExentas>
+        <TotalMercExonerada>0.00</TotalMercExonerada>
+        <TotalGravado>0.00</TotalGravado>
+        <TotalExento>0.00</TotalExento>
+        <TotalExonerado>0.00</TotalExonerado>
+        <TotalVenta>0.00</TotalVenta>
+        <TotalDescuentos>0.00</TotalDescuentos>
+        <TotalVentaNeta>0.00</TotalVentaNeta>
+        <TotalImpuesto>0.00</TotalImpuesto>
+        <TotalOtrosCargos>0.00</TotalOtrosCargos>
+        <TotalComprobante>0.00</TotalComprobante>
+    </ResumenFactura>
+    <ds:Signature Id="Signature-3348f325-fe77-46d4-a15f-918feee1c96c" xmlns:ds="http://www.w3.org/2000/09/xmldsig#">
+        <ds:SignedInfo>
+            <ds:CanonicalizationMethod Algorithm="http://www.w3.org/TR/2001/REC-xml-c14n-20010315"></ds:CanonicalizationMethod>
+            <ds:SignatureMethod Algorithm="http://www.w3.org/2001/04/xmldsig-more#rsa-sha256"></ds:SignatureMethod>
+            <ds:Reference Id="Reference-d6c11aa9-b637-4710-a1ca-5d3c81689fe0" URI="">
+                <ds:Transforms>
+                    <ds:Transform Algorithm="http://www.w3.org/2000/09/xmldsig#enveloped-signature"></ds:Transform>
+                </ds:Transforms>
+                <ds:DigestMethod Algorithm="http://www.w3.org/2001/04/xmlenc#sha256"></ds:DigestMethod>
+                <ds:DigestValue>Zn9MHtlowsJfF65yN7IcFIYhsq9zkFTESwsEsPDmhOU=</ds:DigestValue>
+            </ds:Reference>
+            <ds:Reference Id="ReferenceKeyInfo" URI="#KeyInfoId-Signature-3348f325-fe77-46d4-a15f-918feee1c96c">
+                <ds:DigestMethod Algorithm="http://www.w3.org/2001/04/xmlenc#sha256"></ds:DigestMethod>
+                <ds:DigestValue>4uG4APxj5+HTebkbtbvvWDXzhSmcohhRLGPFEhhwCU4=</ds:DigestValue>
+            </ds:Reference>
+            <ds:Reference Type="http://uri.etsi.org/01903#SignedProperties" URI="#SignedProperties-Signature-3348f325-fe77-46d4-a15f-918feee1c96c">
+                <ds:DigestMethod Algorithm="http://www.w3.org/2001/04/xmlenc#sha256"></ds:DigestMethod>
+                <ds:DigestValue>MmYluCzJ8tCxJvkseSbsAE26c+YUHgzntDeUFZvLeko=</ds:DigestValue>
+            </ds:Reference>
+        </ds:SignedInfo>
+        <ds:SignatureValue>Oim6+4HwLMry2ReYxvPunbT0s0q/nTRP3iNYIVeRU9o7MiwKZnFaa6TIQ9dfy2yS VjgbCeN0i20oRptIoO0FbEbONLH/fMPZRMHM6v8eY5+nGW8qRNoeRbiTMAr3+B7O njQFV2bc+6wCLzImKVefUmAAIyTSH1gmNwtHIddpL7uAPpdJLY4jY5bfqeVZTURO F6BhUwS+Ne2BipjnzV2jwQL7RieyLRiIIY+8A8focdso8DeibQpneCUqQqeKl1+x r+wnJlDqedXGr2TWIr/vlo+gp9PR4wg0dBvur5WEZUZoLXMHRz4IwmoiSZz3SecC dadsaddasdZ/E6WJwRUDg==</ds:SignatureValue>
+        <ds:KeyInfo Id="KeyInfoId-Signature-3348f325-fe77-46d4-a15f-918feee1c96c">
+            <ds:X509Data>
+                <ds:X509Certificate>MIIFQDCCAyigAwIBAgIGAX8y1NALMA0GCSqGSIb3DQEBCwUAMG4xCzAJBgNVBAYT
+                AkNSMSkwJwYDVQQKDCBNSU5JU1RFUklPIERFIEhBQ0lFTkRBIC0gU0FOREJPWDEM
+                MAoGA1UECwwDREdUMSYwJAYDVQQDDB1DQSBQRVJTT05BIEpVUklESUNBIC0gU0FO
+                REJPWDAeFw0yMjAyMjUyMTQxMjJaFw0yNjAyMjQyMTQxMjJaMIddasdadasdadda
+                ExBDUEotMy0xMDItNjAxODA1MQswCQYDVQQGEwJDUjEZMBcGA1UECgwQUEVSU09O QSBKVVJJRElDQTEMMAoGA1UECwwDQ1BKMTMwMQYDVQQDDCpJTlRFTElHRU5DSUEg Q09NRVJDSUFMIEdSVVBPIElOQ08gTElNSVRBREEwggEiMA0GCSqGSIb3DQEBAQUA A4IBDwAwggEKAoIBAQCNtxAg/4ZikmdlBvYtlpNfkvIdQoDgSyRc7u4O7wa65Qkd 1GYhz9dLH41SY/EadjJ8E/Cc2oC59WkFAsjMLabUyq51Gw/NicWbfBAZEaUBXcAP fJtW59MO76TPKcUf4NXDLp0zwE72Q4KUFSNiyyECsRYqaS3GIC4MTMgYNLcrA7iJ 0AqvoG5ULbIx6ZJYfPsVT0IGaUK4FAKCAh+jVRSK06Yh2q7gAu4xkuYovD5t8wjC 5z3GNcsytVmnjmfVuxVN6OAj60s5gKF0pQPjWhYYZKEB2zm61MkPidHBnS7v4Rhi 53h/RmPsXOQulumZE0GJgw0jIXVOjm/enyDDOjStAgMBAAGjgcowgccwHwYDVR0j BBgwFoAUrChF+C+dSF8sHwCQ6zLFowdTgOEwHQYDVR0OBBYEFEELbcFLO4eP4nb5 /MSUo0g/yz1QMAsGA1UdDwQEAwIGwDATBgNVHSUEDDAKBggrBgEFBQcDBDBjBggr BgEFBQcBAQRXMFUwUwYIKwYBBQUHMAKGR2h0dHBzOi8vcGtpLmNvbXByb2JhbnRl c2VsZWN0cm9uaWNvcy5nby5jci9zdGFnL2ludGVybWVkaWF0ZS1wai1wZW0uY3J0 MA0GCSqGSIb3DQEBCwUAA4ICAQCkyOHTf2PLJuiFa6Ffkw+/rFdvpkxw6/eJbYcN VM3DlsWV1LfYWC2z95wWJCbiEYa2T/yHRKMeOVJ8yi1cNTKk/6Ek1wZeUdA81e0w R+NdJdl9pJPCTWHXR86arYZqWPNlbzLtYx5RDfJD/F9VA0ObFx3PjAA4lw4A0dkR DqVN1S2Hkm0qG6woTCMYTbkOaZV5dO6LXVItfSdBf6PhZkczUU9UbgbmzAmYGL+m p7RG+mTpCFvzjUBer4dQCHn5qCXWU7IcWRBCa4QGDsW11RPMxjiMCXcgt/vyRzuO MblG50Pj9KmXGuSAukFvu4Si0gBLni2ovHk+lHN7cd0FmjWVKY23hkSF3xAhBoVM L5oaL8K2tcvHoSc7/D9oM0mgygkfHNe4Q99Qr2sQZAjHZvjb3CyVniaz4RwS6alc DgyKtbYSLzUCF04IuVoZfu3BpcnafPw1VLgpwz+MNk0XksgZnrXIVD5Quq/q2LKS vBJh+YB6nZ9KGvWwwqBHZGDAIc9qclM/hOeUPNAtWraguP+4Pb5XOhMfv63g1erf hYkLCO8N33qq++YCNVZHwwsc89xneourW5OymDfwDqf9/FCENiUhQY7g8XFRQItt PNLamWAD0SRuZA6JbxIYSR5TqQShkkafmmKGPuCcafRqC7FsMMEAszMiblBRj0jB hkTzUg==</ds:X509Certificate>
+            </ds:X509Data>
+            <ds:KeyValue>
+                <ds:RSAKeyValue>
+                    <ds:Modulus>jbcQIP+GYpJnZQb2LZaTX5LyHUKA4EskXO7uDu8GuuUJHdRmIc/XSx+NUmPxGnYy fBPwnNqAufVpBQLIzC2m1MqudRsPzYnFm3wQGRGlAV3AD3ybVufTDu+kzynFH+DV wy6dM8BO9kOClBohjiohohuuiooDEzIGDS3KwO4idAKr6BuVC2yMemSWHz7 FU9CBmlCuBQCggIfo1UUitOmIdqu4ALuMZLmKLw+bfMIwuc9xjXLMrVZp45n1bsV TejgI+tLOYChdKUD41oWGGShAds5utTJD4nRwZ0u7+EYYud4f0Zj7FzkLpbpmRNB iYMNIyF1To5v3p8gwzo0rQ==</ds:Modulus>
+                    <ds:Exponent>AQAB</ds:Exponent>
+                </ds:RSAKeyValue>
+            </ds:KeyValue>
+        </ds:KeyInfo>
+        <ds:Object>
+            <xades:QualifyingProperties Id="Qualifying-Properties-Signature-3348f325-fe77-46d4-a15f-918feee1c96c" Target="#Signature-3348f325-fe77-46d4-a15f-918feee1c96c" xmlns:xades="http://uri.etsi.org/01903/v1.3.2#">
+                <xades:SignedProperties Id="SignedProperties-Signature-3348f325-fe77-46d4-a15f-918feee1c96c">
+                    <xades:SignedSignatureProperties>
+                        <xades:SigningTime>2023-10-15T19:37:05+00:00</xades:SigningTime>
+                        <xades:SigningCertificate>
+                            <xades:Cert>
+                                <xades:CertDigest>
+                                    <ds:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha1"></ds:DigestMethod>
+                                    <ds:DigestValue>Is5122baTMC4WLCgl/A9GFJ/zhk=</ds:DigestValue>
+                                </xades:CertDigest>
+                                <xades:IssuerSerial>
+                                    <ds:X509IssuerName>CN=CA PERSONA JURIDICA - SANDBOX, OU=DGT, O=MINISTERIO DE HACIENDA - SANDBOX, C=CR</ds:X509IssuerName>
+                                    <ds:X509SerialNumber>1645825283412</ds:X509SerialNumber>
+                                </xades:IssuerSerial>
+                            </xades:Cert>
+                        </xades:SigningCertificate>
+                        <xades:SignaturePolicyIdentifier>
+                            <xades:SignaturePolicyImplied></xades:SignaturePolicyImplied>
+                        </xades:SignaturePolicyIdentifier>
+                        <xades:SignatureProductionPlace></xades:SignatureProductionPlace>
+                    </xades:SignedSignatureProperties>
+                </xades:SignedProperties>
+            </xades:QualifyingProperties>
+        </ds:Object>
+    </ds:Signature>
+</TiqueteElectronico>

@@ -1,9 +1,3 @@
-from lxml import etree
-from OpenSSL import crypto
-from xades import XAdESContext, template
-from uuid import uuid4
-import base64
-import xmlsig
 ################################################################
 # Date: 15 Oct 2023
 # Author: Izcar J. Muñoz Torrez
@@ -19,6 +13,12 @@ import xmlsig
 # --------------------------------------------------------------
 ################################################################
 
+from lxml import etree
+from OpenSSL import crypto
+from xades import XAdESContext, template
+from uuid import uuid4
+import base64
+import xmlsig
 import xmlformatter
 """
 We need to use another pretty print function because in etree library 
